@@ -1,0 +1,15 @@
+extends layout
+
+block content
+
+  script(src="https://code.jquery.com/jquery-2.2.4.min.js")
+  script(src="javascripts/distances.js")
+  script(src="javascripts/socket.io.min.js")
+  script(src="javascripts/steamlaunch.js")
+  div(class="intro")
+    h1= title
+    p This application is designed as an easy to use interface for launching the Steamlink application on the Raspberry Pi.
+    p It works by clicking the button. The application will run on the Pi while the button is rendered inactive until the application is stopped manually on the pi.
+    p The application is designed as an linux service and will restart on reboot.
+  div(class="btn-container")
+      button(class="btn-primary", id="steambtn", onClick='steamBtnClick()') Launch Steamlink

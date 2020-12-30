@@ -1,0 +1,14 @@
+[Unit]
+Description=Node.js Steamlink launcher web application
+
+[Service]
+PIDFile=/tmp/steamlinkweb-99.pid
+User=pi
+Group=pi
+Restart=always
+KillSignal=SIGQUIT
+WorkingDirectory=/home/pi/Webpage/steamlink/
+ExecStart=/home/pi/Webpage/steamlink/bin/www
+
+[Install]
+WantedBy=multi-user.target
