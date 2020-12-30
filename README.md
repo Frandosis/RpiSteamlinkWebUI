@@ -93,6 +93,7 @@ systemctl stop steamlinkweb.service
 It can also be enabled to run on boot.
 ```
 systemctl enable steamlinkweb.service
+systemctl disable steamlinkweb.service
 ```
 
 # Enjoy
