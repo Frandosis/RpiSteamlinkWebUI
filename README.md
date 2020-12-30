@@ -90,11 +90,14 @@ It can be started and stopped at current session.
 systemctl start steamlinkweb.service
 systemctl stop steamlinkweb.service
 ```
-It can also be enabled to run on boot.
+It can also be enabled to run on boot or disabled again.
 ```
 systemctl enable steamlinkweb.service
 systemctl disable steamlinkweb.service
 ```
-
+Check service status.
+```
+systemctl status steamlinkweb.service
+```
 # Enjoy
 Enjoy this nice little interface for the steamlink app. Now you don't have to directly access the pi everytime you want to play steam games on it.
